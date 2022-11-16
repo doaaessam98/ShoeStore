@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_16sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_16sdp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:text="@string/name"
+                android:layout_marginVertical="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/company_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:layout_marginVertical="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="@id/name_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/size_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size"
+                android:layout_marginVertical="@dimen/_16sdp"
+
+                app:layout_constraintStart_toStartOf="@id/name_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/company_text_view" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_marginVertical="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="@id/name_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/size_text_view" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+
+                android:text="@string/name"
+                android:layout_marginVertical="@dimen/_16sdp"
+                app:layout_constraintStart_toEndOf="@id/size_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/company_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:layout_marginVertical="@dimen/_16sdp"
+
+                app:layout_constraintStart_toStartOf="@id/name_text_value"
+                app:layout_constraintTop_toBottomOf="@+id/name_text_value" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/size_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size"
+                android:layout_marginVertical="@dimen/_16sdp"
+
+                app:layout_constraintStart_toStartOf="@id/name_text_value"
+                app:layout_constraintTop_toBottomOf="@+id/company_text_value" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/description_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_marginVertical="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="@id/name_text_value"
+                app:layout_constraintTop_toBottomOf="@+id/size_text_value" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
